@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video Slider</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <section>
+      <div class="bannerVideo" id="slideShow">
+        <video src="./videos/video1.mp4" autoplay muted playsinline loop class="active"></video>
+        <video src="./videos/video2.mp4" autoplay muted playsinline loop></video>
+        <video src="./videos/video3.mp4" autoplay muted playsinline loop></video>
+        <video src="./videos/video4.mp4" autoplay muted playsinline loop></video>
+      </div>
+      <div class="container">
+          <header id="navbar">
+              <a href="#" class="logo">World</a>
+              <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Destination</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+              <span class="menuIcon" onclick="toggleMenu()"></span>
+          </header>
+          <div class="content">
+                <div class="bannerText" id="slideShowText">
+                      <div class="active">
+                        <h2>Tokyo</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe dicta voluptas tempore in velit possimus nostrum nesciunt praesentium? Quis eaque sunt ipsam veritatis incidunt debitis odio architecto vero libero nemo.</p>
+                      </div>
+                      <div>
+                        <h2>Paris</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe dicta voluptas tempore in velit possimus nostrum nesciunt praesentium? Quis eaque sunt ipsam veritatis incidunt debitis odio architecto vero libero nemo.</p>
+                      </div>
+                      <div>
+                        <h2>Egypt</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe dicta voluptas tempore in velit possimus nostrum nesciunt praesentium? Quis eaque sunt ipsam veritatis incidunt debitis odio architecto vero libero nemo.</p>
+                      </div>
+                      <div>
+                        <h2>Maldives</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe dicta voluptas tempore in velit possimus nostrum nesciunt praesentium? Quis eaque sunt ipsam veritatis incidunt debitis odio architecto vero libero nemo.</p>
+                      </div>
+                </div>
+          </div>
+          <ul class="controls">
+            <li onclick="prevSlide();prevSlideText();"><img src="images/left.png"></li>
+            <li onclick="nextSlide();nextSlideText();"><img src="images/right.png"></li>
+          </ul>
+      </div>
+  </section>
+  <script src="main.js"></script>
+</body>
+</html>
